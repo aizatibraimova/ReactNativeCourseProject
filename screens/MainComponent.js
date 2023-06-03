@@ -51,7 +51,7 @@ const DirectoryNavigator = () => {
 const AboutNavigator = () => {
   const Stack = createStackNavigator();
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName="About" screenOptions={screenOptions}>
       <Stack.Screen
         name="About"
         component={AboutScreen}
@@ -64,7 +64,7 @@ const AboutNavigator = () => {
 const ContactNavigator = () => {
   const Stack = createStackNavigator();
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName="Contact" screenOptions={screenOptions}>
       <Stack.Screen
         name="Contact"
         component={ContactScreen}
