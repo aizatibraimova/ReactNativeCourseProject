@@ -96,12 +96,12 @@ const Main = () => {
         />
         <Drawer.Screen
           name="About"
-          component={AboutScreen}
+          component={AboutNavigator}
           options={{ title: "About" }}
         />
         <Drawer.Screen
           name="Contact"
-          component={ContactScreen}
+          component={ContactNavigator}
           options={{ title: "Contact Us" }}
         />
       </Drawer.Navigator>
